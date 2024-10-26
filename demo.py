@@ -8,9 +8,9 @@ def parse_arguments():
       
     parser.add_argument('--batch_num', type=int, default=100, help='Number of points in each batch of tracks')  
     parser.add_argument('--radar_length', type=int, default=20, help='Track length')  
-    parser.add_argument('--r', type=float, default=0.9, help='Radius parameter for Gaussian function')  
-    parser.add_argument('--r_threshold', type=float, default=0.9, help='Filtering threshold')  
-    parser.add_argument('--threshold', type=float, default=0.4, help='Threshold value')  
+    parser.add_argument('--r', type=float, default=0.9, help='Generate radar tracks by adding random errors with sigma r to AIS data')  
+    parser.add_argument('--r_threshold', type=float, default=0.9, help='Sigma in the probability distribution function') 
+    parser.add_argument('--threshold', type=float, default=0.4, help='Only scores exceeding the Threshold will be recorded')
     parser.add_argument('--resolution', type=float, default=0.01, help='Resolution of the parameter space for voting')  
       
     args = parser.parse_args()  

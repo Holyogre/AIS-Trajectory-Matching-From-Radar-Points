@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ## Usage
 * To run the main.py script, you need to pass a series of parameters through the command line. Below is an example command that demonstrates how to set each parameter: *
 ``` bash 
-python main.py
+python demo.py
 ```
 * Parameter Descriptions: *
 - `--batch_num`: Number of points in each batch of tracks.    
